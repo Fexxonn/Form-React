@@ -9,6 +9,8 @@ const App = () => {
 
   const [completado, setCompleto] = useState(false);
 
+  const [nombreCompleto, setNombreCompleto] = useState("");
+
   function onSubmit(event) {
     event.preventDefault();
 
@@ -33,14 +35,34 @@ const App = () => {
             <p>
               Mensaje: <span> {mensaje}</span>
             </p>
-            <input
-              type="submit"
-              value="Back"
-              onClick={() => {
-                setCompleto(false);
-              }}
-              className="login-button"
-            />
+            <form
+              action="https://formsubmit.co/9903d3e1a8fb4276bb84df430f16c215 "
+              method="POST"
+
+            >
+              <div style={{display:"none"}}>
+                <input
+                  type="text"
+                  name="nombre"
+                  defaultValue={`${nombre} ${apellido}`}
+                />
+                <input type="text" name="correo" defaultValue={correo} />
+                <input type="text" name="mensaje" defaultValue={mensaje} />
+              </div>
+              <input
+                type="submit"
+                value="Back"
+                onClick={() => {
+                  setCompleto(false);
+                }}
+                className="login-button"
+              />
+              <input
+                type="submit"
+                value="Enviar Correo"
+                className="login-button"
+              />
+            </form>
           </div>
         </div>
       </div>
@@ -50,12 +72,7 @@ const App = () => {
   return (
     <>
       <div className="datos-container">
-        <form
-          onSubmit={onSubmit}
-          className="datos-form"
-          // action="https://formsubmit.co/9903d3e1a8fb4276bb84df430f16c215 "
-          // method="POST"
-        >
+        <form className="datos-form" onSubmit={onSubmit}>
           <h1>Contactame</h1>
           <div className="datos-form-group">
             <label htmlFor="Nombre">Nombre</label>
@@ -93,6 +110,7 @@ const App = () => {
           <div className="datos-form-group">
             <label htmlFor="Mensaje">Mensaje</label>
             <textarea
+              required
               value={mensaje}
               onChange={(event) => setMensaje(event.target.value)}
               maxLength={350}
@@ -100,7 +118,7 @@ const App = () => {
               name="asunto"
             ></textarea>
           </div>
-          <input type="submit" value="submit" className="login-button" />
+          <input type="submit" value="Enviar Info" className="login-button" />
         </form>
       </div>
     </>
