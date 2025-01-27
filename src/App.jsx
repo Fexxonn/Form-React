@@ -105,7 +105,6 @@ const App = () => {
             className="login-button"
             onClick={onSubmit}
           />
-          {/* <input type="submit" value="Enviar Correo" className="login-button" /> */}
         </form>
       </div>
     </>
