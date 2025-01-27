@@ -1,0 +1,122 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  max-width: 450px;
+}
+
+body {
+  background: url("../public/fondoForm.jpg") center/cover no-repeat;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenedor principal */
+.datos-container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Formulario */
+.datos-form {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background: #ffffffbe;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.datos-form h1 {
+  text-align: center;
+  color: #111;
+  margin-bottom: 20px;
+  font-size: clamp(10px, 7vmin, 24px);
+}
+
+/* Inputs y etiquetas */
+.datos-form-group {
+  margin-bottom: 15px;
+}
+
+.datos-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+.datos-form-group input {
+  width: 100%;
+  padding: 10px;
+  border: transparent;
+  border-bottom: 1px solid #777;
+  font-size: 16px;
+
+  background: transparent;
+}
+.datos-form-group input:focus {
+  outline: transparent;
+  border-bottom: 1px solid #111;
+  transform: scale(1.01);
+}
+.datos-form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: transparent;
+  border-bottom: 1px solid #555;
+  font-size: 16px;
+
+  background: transparent;
+  resize: none;
+}
+.datos-form-group textarea:focus {
+  outline: transparent;
+  border-bottom: 1px solid #111;
+}
+
+/* Botón */
+.login-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+
+.datos-form-info p {
+  margin: 1pc 0;
+}
+.datos-form-info p > span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #111;
+  padding: 1pc 0;
+}
