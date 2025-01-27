@@ -53,7 +53,7 @@ const App = () => {
         <form
           // onSubmit={onSubmit}
           className="datos-form"
-          action="https://formsubmit.co/torrenegradavid@gmail.com"
+          action="https://formsubmit.co/9903d3e1a8fb4276bb84df430f16c215 "
           method="POST"
         >
           <h1>Contactame</h1>
