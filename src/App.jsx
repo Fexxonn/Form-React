@@ -51,7 +51,7 @@ const App = () => {
     <>
       <div className="datos-container">
         <form
-          onSubmit={onSubmit}
+          // onSubmit={onSubmit}
           className="datos-form"
           action="https://formsubmit.co/torrenegradavid@gmail.com"
           method="POST"
