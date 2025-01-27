@@ -51,9 +51,8 @@ const App = () => {
     <>
       <div className="datos-container">
         <form
-          // onSubmit={onSubmit}
           className="datos-form"
-          action="https://formsubmit.co/9903d3e1a8fb4276bb84df430f16c215 "
+          action="https://formsubmit.co/9903d3e1a8fb4276bb84df430f16c215"
           method="POST"
         >
           <h1>Contactame</h1>
@@ -100,7 +99,13 @@ const App = () => {
               name="asunto"
             ></textarea>
           </div>
-          <input type="submit" value="submit" className="login-button" />
+          <input
+            type="submit"
+            value="Mostrar tarjeta"
+            className="login-button"
+            onClick={completado ? onSubmit : ""}
+          />
+          <input type="submit" value="Enviar Correo" className="login-button" />
         </form>
       </div>
     </>
