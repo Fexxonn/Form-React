@@ -103,9 +103,9 @@ const App = () => {
             type="submit"
             value="Mostrar tarjeta"
             className="login-button"
-            onClick={completado ? onSubmit : ""}
+            onClick={onSubmit}
           />
-          <input type="submit" value="Enviar Correo" className="login-button" />
+          {/* <input type="submit" value="Enviar Correo" className="login-button" /> */}
         </form>
       </div>
     </>
